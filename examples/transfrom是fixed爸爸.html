@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div class="app">
+  <button onclick="document.getElementById('layer').style.display='block'">弹出蒙层</button>
+  <div class="layer" id="layer"></div>
+</div>
+<style>
+  .app {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    /* 使用transform让元素向下偏移20px */
+    transform: translate(0, 20px);
+  }
+
+  .layer {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+</style>
+</body>
+</html>

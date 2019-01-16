@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div class="menu">
+  <div class="title">下拉菜单</div>
+  <div class="menu-list">
+    <div class="item">菜单1</div>
+    <div class="item">菜单2</div>
+    <div class="item">菜单3</div>
+  </div>
+</div>
+<div class="content">
+  我是半透明的文字，可以覆盖在下拉菜单之上哦~
+</div>
+<style>
+  .menu {
+    position: relative;
+  }
+
+  .menu-list {
+    display: none;
+    position: absolute;
+    background: #ccc;
+  }
+
+  .menu:hover .menu-list {
+    display: block;
+  }
+
+  .content {
+    opacity: 0.8;
+  }
+</style>
+</body>
+</html>
